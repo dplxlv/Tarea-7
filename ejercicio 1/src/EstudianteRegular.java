@@ -1,0 +1,17 @@
+public class EstudianteRegular extends Estudiante {
+    private int numeroMaterias;
+
+    public void setNumeroMaterias(int numeroMaterias) {
+        if (numeroMaterias > 0) {
+            this.numeroMaterias = numeroMaterias;
+        }
+    }
+
+    public int getNumeroMaterias() {
+        return numeroMaterias;
+    }
+
+    public double calcularPagoFinal() {
+        return getValorMatricula() + (numeroMaterias * 10);
+    }
+}
